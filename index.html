@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <title>AMAFLIX</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+ 
+<body id="TOP">
+
+  <header>
+    <div class="container">
+        <div class="logo-name">
+          <img src="ALL_POSTERS/Group 12.png" alt="" id="logo">
+          <a href="#TOP" id="name">AMAFLIX </a>
+        </div>
+        <div class="home-options">
+          <a href="#upcoming" class="go-to-upcoming-movies">UPCOMING </a>
+          <a href="#streaming-now" class="go-to-now-streaming">STREAMING NOW</a>
+          <a href="#top-rated" class="go-to-top-rated-movies">TOP-RATED</a>
+          <a href="#tv-shows" class="go-to-tv-shows">TV-SHOWS</a>
+          <a href="#trial" class="go-to-about">ABOUT</a>
+        </div>
+        <div class="search-box">
+          <input type="text" id="query" placeholder="Search..."/>
+          <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+          <a href="#trial" id="sign-in">Sign In</a>
+          <button id="menu-btn"><i class="fa-solid fa-bars"></i></button>
+          </div>
+        </div>
+
+    </div>
+  </header>
+   <!--..............................HOME........................................-->
+
+  <div class="home">
+    <div class="slider">
+      <div class="slides">
+        <div class="slide" id="slide1">
+          <div class="MAIN-CONTAINER">
+            <div class="name_AMA">FILMY</div>
+            <div id="home-text">
+              <h1 class="home-tx" >Unlimited   </h1>
+              <h1 class="home-tx"  id="color-movies">  Movies,</h1>
+            </div>
+            <h1 class="home-tx">Tv Shows</h2>
+            <h1 class="home-tx"> & Web Series</h2>
+            <a href="#streaming-now" id="watch">Watch Now</a>
+          </div>
+        </div>
+        <div class="slide" id="slide2">
+          <div class="MAIN-CONTAINER">
+            <div class="name_AMA">FILMY</div>
+            <div id="home-text">
+              <h1 class="home-tx" >Unlimited   </h1>
+              <h1 class="home-tx"  id="color-movies">  Movies,</h1>
+            </div>
+            <h1 class="home-tx">Tv Shows</h2>
+            <h1 class="home-tx"> & Web Series</h2>
+            <a href="#streaming-now" id="watch">Watch Now</a>
+          </div>
+        </div>
+        <div class="slide" id="slide3">
+          
+        </div>
+      </div>
+    </div>
+  </div>
+    <!--..............................UPCOMING MOVIES SECTION........................................-->
+
+  <div class="upcoming" id="upcoming">
+      <div class="top">
+        <h1>Upcoming Movies</h1>
+      </div>
+
+      <div id="poster-area">
+        <div class="upcoming-poster-details">
+          <img src="posters/black_panther_wakanda_forever_ver2.jpg" class="upcoming-poster upcoming-poster-1">
+          <div class="upcoming-details">
+            <div class="title-box">
+              <h5>title</h5>
+              <p>year</p>
+            </div>
+            <div class="rating-box">
+              <div class="HD">HD</div>
+              <div class="rating"><i class="fa-solid fa-star"></i>8.5</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="upcoming-poster-details">
+          <div class="upcoming-poster upcoming-poster-1"></div>
+          <div class="upcoming-details">
+            <h5>title</h5>
+            <p>year</p>
+            <p>HD</p>
+            <p>Rating</p>
+          </div>
+        </div>
+        <div class="upcoming-poster-details">
+          <div class="upcoming-poster upcoming-poster-1"></div>
+          <div class="upcoming-details">
+            <h5>title</h5>
+            <p>year</p>
+            <p>HD</p>
+            <p>Rating</p>
+          </div>
+        </div>
+        <div class="upcoming-poster-details">
+          <div class="upcoming-poster upcoming-poster-1"></div>
+          <div class="upcoming-details">
+            <h5>title</h5>
+            <p>year</p>
+            <p>HD</p>
+            <p>Rating</p>
+          </div>
+        </div>
+      </div>  
+  </div>
+  <!--......................STREAMING NOW........................................-->
+
+ <div class="streaming-now" id="streaming-now">
+  <div class="top">
+    <h1>Streaming Now</h1>
+  </div>
+
+  <div id="streaming-now-poster-area">
+    <div class="streaming-now-poster-details">
+      <img src="posters/black_panther_wakanda_forever_ver2.jpg" class="streaming-now-poster streaming-now-poster-1">
+      <div class="streaming-now-details">
+        <div class="title-box">
+          <h5>title</h5>
+          <p><i class="fa-solid fa-calendar-days"></i>year</p>
+        </div>
+        <div class="rating-box">
+          <div class="HD">HD</div>
+          <div class="duration"><i class="fa-regular fa-clock"></i>137 min</div>
+          <div class="rating"><i class="fa-solid fa-star"></i>8.5</div>
+        </div>
+      </div>
+    </div>
+    <div class="streaming-now-poster-details">
+      <img src="posters/black_panther_wakanda_forever_ver2.jpg" class="streaming-now-poster streaming-now-poster-1">
+      <div class="streaming-now-details">
+        <div class="title-box">
+          <h5>title</h5>
+          <p><i class="fa-solid fa-calendar-days"></i>year</p>
+        </div>
+        <div class="rating-box">
+          <div class="HD">HD</div>
+          <div class="duration"><i class="fa-regular fa-clock"></i>137 min</div>
+          <div class="rating"><i class="fa-solid fa-star"></i>8.5</div>
+        </div>
+      </div>
+    </div>
+    <div class="streaming-now-poster-details">
+      <img src="posters/black_panther_wakanda_forever_ver2.jpg" class="streaming-now-poster streaming-now-poster-1">
+      <div class="streaming-now-details">
+        <div class="title-box">
+          <h5>title</h5>
+          <p><i class="fa-solid fa-calendar-days"></i>year</p>
+        </div>
+        <div class="rating-box">
+          <div class="HD">HD</div>
+          <div class="duration"><i class="fa-regular fa-clock"></i>137 min</div>
+          <div class="rating"><i class="fa-solid fa-star"></i>8.5</div>
+        </div>
+      </div>
+    </div>
+    <div class="streaming-now-poster-details">
+      <img src="posters/black_panther_wakanda_forever_ver2.jpg" class="streaming-now-poster streaming-now-poster-1">
+      <div class="streaming-now-details">
+        <div class="title-box">
+          <h5>title</h5>
+          <p><i class="fa-solid fa-calendar-days"></i>year</p>
+        </div>
+        <div class="rating-box">
+          <div class="HD">HD</div>
+          <div class="duration"><i class="fa-regular fa-clock"></i>137 min</div>
+          <div class="rating"><i class="fa-solid fa-star"></i>8.5</div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+ </div>
+ <!--..............................TOP RATED SECTION........................................-->
+
+    <div class="top-rated" id="top-rated">
+        <div class="top">
+          <h1>Top Rated Movies</h1>
+        </div>
+        <div class="genre genre-upcoming">
+          <div id="genre-container">
+            <div class="tag">Action</div>
+            <div class="tag">Adventure</div>
+            <div class="tag">Comedy</div>
+            <div class="tag">Drama</div>
+            <div class="tag">Fantasy</div>      
+          </div>
+        </div>
+
+        <div id="top-rated-poster-area" class="poster-area">
+          <div class="top-rated-poster-details">
+            <img src="" alt="" class="top-rated-poster top-rated-poster-1">
+            <div class="top-rated-details">
+              <div class="title-box">
+                <h5>title</h5>
+                <p><i class="fa-solid fa-calendar-days"></i>year</p>
+              </div>
+              <div class="rating-box">
+                <div class="HD">HD</div>
+                <div class="duration"><i class="fa-regular fa-clock"></i>137 min</div>
+                <div class="rating"><i class="fa-solid fa-star"></i>8.5</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="top-rated-poster-details">
+            <div class="top-rated-poster top-rated-poster-2"></div>
+            <div class="top-rated-details">
+              <h5>title</h5>
+              <p>year</p>
+              <p>HD</p>
+              <p>Rating</p>
+            </div>
+          </div>
+          
+          <div class="top-rated-poster-details">
+            <div class="top-rated-poster top-rated-poster-3"></div>
+            <div class="top-rated-details">
+              <h5>title</h5>
+              <p>year</p>
+              <p>HD</p>
+              <p>Rating</p>
+            </div>
+          </div>
+
+          <div class="top-rated-poster-details">
+            <div class="top-rated-poster top-rated-poster-4"></div>
+            <div class="top-rated-details">
+              <h5>title</h5>
+              <p>year</p>
+              <p>HD</p>
+              <p>Rating</p>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!--......................................TV SHOWS................................-->
+    <div class="tv-shows" id="tv-shows">
+        <div class="top">
+          <h1>Best Tv Shows</h1>
+        </div>
+
+        <div class="genre genre-tv-shows">
+          <div class="genre-container">
+            <div id="airing-today-tv-shows">Airing Now</div>
+            <div id="popular-tv-shows">Popular</div>
+            <div id="top-rated-tv-shows">Top Rated</div>
+          </div>
+        </div>
+
+        
+        <div id="tv-shows-poster-area">
+          <div class="tv-shows-poster-details">
+            <img src="" class="tv-shows-poster tv-shows-poster-1" alt="">
+            <div class="top-rated-details">
+              <div class="title-box">
+                <h5>title</h5>
+                <p><i class="fa-solid fa-calendar-days"></i>year</p>
+              </div>
+              <div class="rating-box">
+                <div class="HD">HD</div>
+                <div class="duration"><i class="fa-regular fa-clock"></i>137 min</div>
+                <div class="rating"><i class="fa-solid fa-star"></i>8.5</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tv-shows-poster-details">
+            <div class="tv-shows-poster tv-shows-poster-2"></div>
+            <div class="top-rated-details">
+              <h5>title</h5>
+              <p>year</p>
+              <p>HD</p>
+              <p>Rating</p>
+            </div>
+          </div>
+        </div>
+
+    </div>
+        
+        <!--.....................................FOOTER................................-->
+
+  
+    <div class="trial" id="trial">
+      <div> 
+        <p>Start Your Trial</p>
+        <div id="start-trial">
+          <input type="text" placeholder="Enter Your E-mail">
+          <button>Sign In</button>
+        </div>
+      </div>
+      
+    </div>
+    <div class="footer hidden show">
+      <div class="col1" id="colOne">
+        <h1>AMAFLIX</h1>
+        <p>About, find your favorite movie, check their cast and plot of the movie.</p>
+        <p id="Myname">Made by Biswajyoti Sahoo</p>
+        <p>© 2024 AMAFLIX. All rights reserved.</p>
+    </div>
+    <div class="col1">
+        <p>Home</p>
+        <p>About</p>
+        <p>Top Rated</p>
+        <p>Streaming Now</p>
+        <p>TV Shows</p>
+    </div>
+    <div class="col1">
+        <p>Contact Us</p>
+        <div class="social-links">
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </div>
+    </div>
+
+
+    <a href="#TOP" class="go-to-top">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+   <!-- Load jQuery first -->
+   <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script> -->
+    
+   <!-- Load Bootstrap JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+   <!-- Load Materialize JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   
+   <!-- Load custom scripts -->
+   <script type="module" src="main.js"></script>
+   <script type="module" src="main.mjs"></script>
+    
+    
+</body>
+</html>

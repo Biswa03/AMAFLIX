@@ -1,0 +1,1165 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway','poppins', sans-serif;
+}
+body{
+    background: url(posters/background.jpg);
+    background-size: cover;
+    display: block;
+}
+body::-webkit-scrollbar{
+    width: 10px;
+    background: rgba(16, 16, 16, 0.4);
+    border-radius: 6px;
+    visibility: visible;
+}
+body::-webkit-scrollbar-thumb{
+    width: 8px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+    visibility: visible;
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: rgb(41, 45, 45);
+    position: fixed;
+    padding-top: 7px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    z-index: 5;
+    visibility: collapse;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    visibility: visible;
+    /*border: 2px solid rgb(255, 255, 255);*/
+    /* background-color: #1A120B; */
+    background: linear-gradient(rgb(31, 29, 29), transparent);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 7px;
+
+}
+.logo-name{
+    width: 150px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    padding: 18px 10px;
+}
+.logo-name #logo{
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+}
+#name{
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.home-options{
+    margin: 0 5px;
+}
+.home-options a{
+    color: #ffffff;
+    margin: 3px 5px;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.home-options a:hover{
+    color: #7B6CF6;
+}
+.search-box {
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input {
+    border-radius: 15px;
+    padding: 3px 15px;
+    border: none;
+    outline: none;
+    background: rgba(255, 255, 255, 0.4);
+    color: #1A120B;
+}
+
+.search-box input::placeholder {
+    color: #1A120B;
+}
+
+.search-box .search {
+    position: absolute;
+    width: 320px;
+    height: 190px;
+    padding-top: 25px;
+    visibility: hidden;
+    right: 0;
+    top: 40px;
+    z-index: 999;
+    overflow-y: auto;
+    background: white; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    border: 1px solid #ddd; 
+}
+
+
+#search-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    border: 1px solid #ffffff;
+    margin-left: 7px;
+    background-color: #ffffff; 
+    color: #7B6CF6;
+    backdrop-filter: blur(5px);
+}
+#search-btn:hover {
+    background-color: #7B6CF6; 
+    color: #ebebeb;
+}
+#menu-btn{
+    width: 35px;
+    height: 35px;
+    border-radius: 17px;
+    border: 1px solid #ffffff;
+    margin-left: 7px;
+    color: #1A120B;
+    background: rgb(189, 189, 189);
+    backdrop-filter: blur(5px);
+}
+#sign-in {
+    width: auto;
+    color: #ffffff;
+    height: 35px;
+    border-radius: 32px;
+    border: 1px solid transparent; /* Remove border */
+    background-color: #7B6CF6;
+    text-decoration: none;
+    padding: 0 20px;
+    font-weight: 600;
+    margin-left: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease; /* Add transition effect */
+}
+
+#sign-in:hover {
+    background-color: #ffffff; 
+    color: #7B6CF6;
+}
+
+#sign-in i {
+    margin-right: 5px; 
+}
+
+#sign-in:focus {
+    outline: none; 
+}
+
+@media (max-width: 1300px) {
+    #query {
+        display: none;
+    }
+    .home-options {
+        display: none;
+    }
+    
+    #menu-btn {
+        display: block;
+    }
+}
+
+@media (min-width: 1300px) {
+    #menu-btn {
+        display: none;
+    }
+}
+
+/*------------------------------------------- HOME ------------------------------------------*/
+
+
+
+.slider {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    transition: transform 1s ease-in-out;
+    width: 300%;
+  }
+  
+  .slide {
+    width: 100vw;
+    height: 100vh;
+    flex-shrink: 0;
+  }
+  
+/* Add background images to each slide */
+#slide1 {
+    /* background-image: url(1329876.png);  */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2)), url('1329876.png');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  #slide2 {
+    /* background-image: url(IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_large.jpg); */
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)), url('IN-en-20240205-popsignuptwoweeks-perspective_alpha_website_large.jpg');
+    background-size: cover;
+    background-position: center;
+
+  }
+  
+  #slide3 {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url(ALL_POSTERS/SpiDerMan3.png);
+    background-size: cover;
+    background-position: center;
+    
+  }
+/*------------------------------------------- HOME ------------------------------------------*/
+.home{
+    height: 100vh;
+    width:100%;
+    
+    /* background:url(ALL_POSTERS/SpiDerMan3.png); */
+    /* background-size: cover; */
+    /* display: flex;
+    justify-content: left;
+    padding: 0 0; */
+
+    overflow: hidden;
+}
+
+/* Base styles for large screens */
+@media (max-width: 2000px) {
+    .MAIN-CONTAINER {
+        height: 100%;
+        color: #ffffff;
+        max-width: 700px;
+        position: absolute;
+        align-items: center;
+        margin-top: 190px;
+        padding-left: 150px;
+    }
+    .name_AMA {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        font-weight: bolder;
+    }
+
+    .home-tx {
+        font-size: 4rem;
+        font-weight: bolder;
+    }
+
+    #watch {
+        font-size: 2rem;
+        padding: 5px 15px;
+        height: auto;
+        display: flex;
+        width: 230px;
+        text-decoration: none;
+        border: 2px solid white;
+        background-color: #ffffff;
+        color: #7B6CF6;
+        border-radius: 30px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 35px;
+    }
+    #watch:hover {
+        background-color: #7B6CF6;
+        color: #ffffff;
+    }
+
+    h1 {
+        font-family: 'Poppins', sans-serif;
+        font-weight: bolder;
+        line-height: 70px;
+        font-size: 60px;
+    }
+
+    #home-text {
+        display: flex;
+    }
+
+    #color-movies {
+        margin-left: 13px;
+        color: #7B6CF6;
+    }
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+    .MAIN-CONTAINER {
+        padding-left: 80px;
+        margin-top: 200px;
+    }
+    .name_AMA {
+        font-size: 1.5rem;
+    }
+    .home-tx {
+        font-size: 3.5rem;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    #watch {
+        font-size: 1rem;
+        padding: 6px 12px;
+        margin-top: 2rem;
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .MAIN-CONTAINER {
+        padding-left: 70px;
+        margin-top: 200px;
+    }
+    .name_AMA {
+        font-size: 1.5rem;
+    }
+    .home-tx {
+        font-size: 3rem;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    #watch {
+        font-size: 1rem;
+        padding: 6px 12px;
+        margin-top: 2rem;
+        height: auto;
+        width: auto;
+    }
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .MAIN-CONTAINER {
+        padding-left: 50px;
+        margin-top: 200px;
+    }
+    .name_AMA {
+        font-size: 1.3rem;
+    }
+    .home-tx {
+        font-size: 2.5rem;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    #watch {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+        margin-top: 2rem;
+        height: auto;
+        width: auto;
+    }
+}
+
+/*------------------------------------------------UPCOMING------------------------------------------------------*/
+.upcoming{
+    height: 120vh;
+    /* background: #1A120B; */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),  url(POSTER_movie_film_movies_posters_1920x1080.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 0 110px;
+}
+
+.top{
+    height: auto;
+    color: #7B6CF6;
+    padding-left: 60px;
+    margin: 10px 0;
+}
+.upcoming h1{
+    color: #7B6CF6;
+    height: auto;
+    margin: 20px 0;
+    font-size: 50px;
+    font-weight: 600;
+    /* background-color: rgba(190, 110, 40, 0.1); */
+    align-items: center;
+}
+/*RESPONSIVE PADDING */
+
+/* Medium screens */
+@media (max-width: 992px) {
+    .upcoming {
+        padding: 0 35px;
+    }
+
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .upcoming {
+        padding: 0 25px;
+    }
+    
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .upcoming {
+        padding: 0 10px;
+    }
+    
+}
+#poster-area{
+    height: 90%;
+    background-color:rgba(209, 200, 192,0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,3fr));*/
+    grid-template-columns: 270px 270px 270px 270px;
+  
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 20px;
+    grid-gap: 30px 30px;
+    padding: 0 30px;
+    overflow-x: auto;
+}
+#poster-area::-webkit-scrollbar{
+    width: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    visibility: visible;
+}
+#poster-area::-webkit-scrollbar-thumb{
+    width: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    visibility: visible;
+}
+.upcoming-poster-details{
+    color: #7B6CF6;
+    width: 255px;
+    height: 465px;
+    display: inline-block;
+    position: relative;
+    margin: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    text-decoration: none;
+}
+.upcoming-poster{
+    width: 100%;
+    height: 380px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.upcoming-poster-1{
+    background-image: url("posters/captain_america_civil_war_ver15.jpg");
+}
+.upcoming-poster-2{
+    background-image: url('posters/captain_america_civil_war_ver15.jpg');
+}
+.upcoming-details{
+    color: #ffffff;
+    height: 10vh;
+    display: block;
+    padding: 4px 5px;
+}
+.title-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-items: center;
+    margin-bottom: 2px;
+    padding-top: 5px;
+    padding-bottom: 1px;
+}
+.title-box h5{
+    font-size: 20px;
+    line-height: 21px;
+    overflow: hidden;
+}
+.title-box p{
+    font-size: 15px;
+    line-height: 20px;
+    margin-top:15px ;
+}
+.rating-box{
+    width: 100%;
+    height: 25px;
+    margin-top: 0px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    gap: 15px;
+}
+.duration{
+    color: #ffffff;
+    margin-left: 75px;
+}
+.HD{
+    color: wheat;
+    border: 2px solid #7B6CF6;
+    padding: 0.5px 5px;
+    margin: 1px 2px;
+}
+.rating{
+    display: block;
+    margin-left: 0px;
+}
+.rating i{
+    color: #7B6CF6;
+    width: 5px;
+    height: 5px;
+    margin-right: 16px;
+    text-decoration: none;
+}
+/*-----------------------------------------------STREAMING NOW.----------------------------------------------------*/
+.streaming-now{
+    height: 120vh;
+    /* background-color:rgb(20, 20, 20); */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),  url(POSTER_movie_film_movies_posters_1920x1080.jpg);
+    
+    background-size: cover;
+    padding: 0 110px;
+}
+/*RESPONSIVE PADDING */
+/* Medium screens */
+@media (max-width: 992px) {
+    .streaming-now{
+        padding: 0 35px;
+    }
+
+}
+
+/* Small screens */
+@media (max-width: 768px) {
+    .streaming-now{
+        padding: 0 25px;
+    }
+    
+}
+
+/* Extra small screens */
+@media (max-width: 576px) {
+    .streaming-now{
+        padding: 0 10px;
+    }
+    
+}
+.streaming-now h1{
+    color: #7B6CF6;
+    height: auto;
+    margin: 20px 0;
+    font-size: 50px;
+    font-weight: 600;
+    /* background-color: rgba(190, 110, 40, 0.1); */
+    align-items: center;
+}
+#streaming-now-poster-area{
+    height: 90%;
+    background-color:rgba(209, 200, 192,0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,3fr));*/
+    grid-template-columns: 270px 270px 270px 270px;
+  
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 20px;
+    grid-gap: 30px 30px;
+    padding: 0 30px;
+    overflow-x: auto;
+}
+#streaming-now-poster-area::-webkit-scrollbar{
+    width: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    visibility: visible;
+}
+#streaming-now-poster-area::-webkit-scrollbar-thumb{
+    width: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    visibility: visible;
+}
+.streaming-now-poster-details{
+    width: 255px;
+    height: 450px;
+    display: flexbox;
+    border-radius: 10px;
+    margin: 20px;
+    min-width: 250px;
+    background-color: black;
+    text-decoration: none;
+}
+.streaming-now-poster{
+    width: 100%;
+    height: 380px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.streaming-now-details{
+    color: #ffffff;
+    height: 10vh;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 5px;
+}
+/*------------------------------------------------TOP RATED------------------------------------------------------*/
+.genre{
+    height: auto;
+    display: flex;
+    /* background-color: #1A120B; */
+    justify-content: center;
+    padding: 0 10px;
+    margin: 10px 0;
+}
+#genre-container{
+    color: #8273f4;
+    width: 97%;
+    height: 100%;
+    display: flex; 
+    justify-content: space-between;
+    /* align-items: center;  */
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 10px;    
+    align-items: center;
+    margin: 0 10px;
+    /* padding: 0 20px; */
+}
+#genre-container .tag{
+    border: 1px solid rgb(155, 179, 236);
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin: 0 9px;
+    /* display: inline-flex; */
+    background: #0f0f0f;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center; 
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 992px) {
+    #genre-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    #genre-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+}
+
+@media (max-width: 576px) {
+    #genre-container {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    }
+}
+.top-rated{
+    height: 130vh;
+    /* background-color:rgb(20, 20, 20); */
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),  url(POSTER_movie_film_movies_posters_1920x1080.jpg);
+    background-size: cover;
+    padding: 0 110px;
+}
+
+/*RESPONSIVE PADDING */
+
+/* Small screens */
+@media (max-width: 768px) {
+.top-rated{
+    height: 150vh;
+            }
+            
+        }
+/* Extra small screens */
+@media (max-width: 576px) {
+.top-rated{
+    height: 160vh;
+            }
+            
+        }
+.top-rated h1{
+    color: #7B6CF6;
+    height: auto;
+    margin: 20px 0;
+    font-size: 50px;
+    font-weight: 600;
+    /* background-color: rgba(190, 110, 40, 0.1); */
+    align-items: center;
+}
+
+/*RESPONSIVE PADDING */
+
+/* Medium screens */
+@media (max-width: 992px) {
+    .top-rated{
+            padding: 0 35px;
+        }
+    }
+    
+    /* Small screens */
+    @media (max-width: 768px) {
+    .top-rated{
+            padding: 0 25px;
+        }
+        
+    }
+    
+    /* Extra small screens */
+    @media (max-width: 576px) {
+    .top-rated{
+            padding: 0 10px;
+        }  
+    }
+.poster-area{
+    height: 80%;
+    /* background-color:#1A120B; */
+    background-color:rgba(209, 200, 192,0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;    
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,3fr));*/
+    grid-template-columns: 270px 270px 270px 270px;
+  
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 20px;
+    grid-gap: 30px 30px;
+    padding: 0 30px;
+    overflow-x: auto;
+}
+.poster-area::-webkit-scrollbar{
+    width: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    visibility: visible;
+}
+.poster-area::-webkit-scrollbar-thumb{
+    width: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    visibility: visible;
+}
+.top-rated-poster-details{
+    color: white;
+    width: 255px;
+    height: 450px;
+    display: flexbox;
+    border-radius: 10px;
+    margin: 20px;
+    min-width: 250px;
+    background-color: black;
+    text-decoration: none;
+}
+.top-rated-poster{
+    width: 100%;
+    height: 380px;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.top-rated-poster-1{
+    background-image: url("posters/captain_america_civil_war_ver15.jpg");
+}
+.top-rated-poster-2{
+    background-image: url('posters/captain_america_civil_war_ver15.jpg');
+}
+.top-rated-details{
+    color: #ffffff;
+    height: 10vh;
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px 5px;
+}
+/*------------------------------------------------TV SHOWS------------------------------------------------------*/
+
+.tv-shows{
+    height: 150vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),  url(POSTER_movie_film_movies_posters_1920x1080.jpg);
+    padding: 0 110px;
+}
+
+/*RESPONSIVE PADDING */
+
+/* Medium screens */
+@media (max-width: 992px) {
+.tv-shows{
+            padding: 0 35px;
+        }
+    
+    }
+    
+    /* Small screens */
+    @media (max-width: 768px) {
+.tv-shows{
+            padding: 0 25px;
+        }
+        
+    }
+    
+    /* Extra small screens */
+    @media (max-width: 576px) {
+.tv-shows{
+            padding: 0 10px;
+        }
+        
+    }
+.tv-shows h1{
+        color: #7B6CF6;
+        height: auto;
+        margin: 20px 0;
+        font-size: 50px;
+        font-weight: 600;
+        /* background-color: rgba(190, 110, 40, 0.1); */
+        align-items: center;
+}
+#best-tv-shows{
+    height: 9vh;
+    color: #7B6CF6;
+    padding-left: 100px;
+
+    background-color: #1A120B;
+    align-items: center;
+}
+.genre-container{
+    color: #7B6CF6;
+    width: 50%;
+    height: 100%;
+    justify-content: space-evenly;
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+    padding: 0 10px;
+}
+.genre-container div{
+    border: 1px solid whitesmoke;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin: 0 9px;
+    display: flex;
+    background: #0f0f0f;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.tv-shows-poster-details{
+    color: #ffffff;
+    width: 255PX;
+    height: 450PX;
+    display: flexbox;
+    margin: 20px;
+    border-radius: 10px;
+    min-width: 250px;
+    background-color: black;
+    text-decoration: none;
+}
+#tv-shows-poster-area{
+    height: 85%;
+    background-color:rgba(209, 200, 192,0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 5px;    
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(200px,3fr));*/
+    grid-template-columns: 270px 270px 270px 270px;
+  
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 20px;
+    grid-gap: 30px 30px;
+    padding: 0 30px;
+    overflow-x: auto;
+}
+#tv-shows-poster-area::-webkit-scrollbar{
+    width: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    visibility: visible;
+}
+#tv-shows-poster-area::-webkit-scrollbar-thumb{
+    width: 10px;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    visibility: visible;
+}
+.tv-shows-poster{
+    width: 100%;
+    height: 380PX;
+    background-size: cover;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.tv-shows-poster-1{
+    background-image: url("posters/captain_america_civil_war_ver15.jpg");
+}
+.tv-shows-poster-2{
+    background-image: url('posters/HD-wallpaper-jumanji-2017-dwayne-johnson-jack-black-karen-gillan-kevin-hart-movie-poster-welcome-to-the-jungle.jpg');
+}
+.tv-shows-poster-3{
+    background-image: url("posters/eternals_ver3.jpg");
+}
+.tv-shows-poster-4{
+    background-image: url(posters/black_panther_wakanda_forever_ver2.jpg);
+}
+
+/* ----------------------FOOTER----------------------- */
+
+/* .trial{
+    height: 20vh;
+    width: 100%;
+    background-color: #7B6CF6;
+    cursor: progress;
+    padding: 10px 100px;
+    align-items: center;
+    justify-content: center;
+} */
+.trial {
+    height: 15vh;
+    width: 100%;
+    background-color: #7B6CF6;
+    padding: 20px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    border: none;
+}
+
+.trial p {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ffffff;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#start-trial {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+}
+
+#start-trial input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 1rem;
+    width: 230px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#start-trial button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 25px;
+    color: #7B6CF6;
+    font-size: 1rem;
+    font-weight: bold;
+    width: auto;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, color 0.3s ease;
+    white-space: nowrap;
+}
+
+#start-trial button:hover {
+    background-color: #7B6CF6;
+    color: #ffffff;
+}
+
+/* ----------------------FOOTER----------------------- */
+.footer {
+    width: 100%;
+    background-color: #1A120B;
+    padding: 40px 50px; 
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    color: #ffffff;
+}
+.col1 {
+    flex: 1; 
+    margin: 0 20px; 
+    margin-top: 50px;
+}
+#colOne {
+    width: auto;
+    margin-top: 0px;
+}
+#colOne h1 {
+    margin-bottom: 20px; 
+    font-size: 3rem;
+    line-height: normal; 
+}
+#colOne p {
+    max-width: 300px; 
+}
+.footer p {
+    margin: 10px 0; 
+}
+.footer p:hover {
+    color: #7B6CF6; 
+    cursor: pointer;
+}
+.footer .col1 p {
+    font-size: 1rem;
+    font-weight: 500;
+}
+#Myname{
+    font-size: 1.4rem;
+    margin: 20px 0;
+    font-weight: 500;
+}
+.footer .col1 h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.social-links {
+    display: flex;
+    gap: 15px; 
+}
+.social-links i {
+    font-size: 1.5rem; 
+    color: #ffffff; 
+    transition: color 0.3s ease;
+}
+.social-links i:hover {
+    color: #7B6CF6;
+}
+
+/* ----------------------TOP ICON------------------------ */
+
+.go-to-top{
+    width: 50px;
+    height: 50px;
+    color: #ffffff;
+    position: fixed;
+    background-color: #7B6CF6;
+    border-radius: 25px;
+    bottom: 20px;
+    right: 20px;
+    display: block;
+    padding: 14px 17px;
+    backdrop-filter: blur(5px);
+
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1s;
+}
+.show{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+
+
+/*
+.rhombus-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.rhombus {
+    width: 100px;
+    height: 100px;
+    background: url("posters/black_panther_wakanda_forever_ver2.jpg") center center/cover;
+    transform: rotate(45deg);
+}
+.rect-4{
+    background: url("posters/black_panther_wakanda_forever_ver2.jpg"), lightgray -192.79px -57.005px / 190.57% 127.825% no-repeat;
+    width: 50%;
+    margin-right: 0;
+    height: 100%;
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 10% 100%, 35% 50%, 10% 0%);
+    z-index: 0;
+}
+.rect-3{
+    width: 500px;
+    height: 100%;
+    flex-shrink: 0;
+    background: url("posters/avengers_age_of_ultron_ver11.jpg");
+    background-color:  lightgray -296.556px 0px / 199.182% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    z-index: 2;
+
+    /*width: calc(80% - 50px);
+height: 100%;
+padding: 2% 5%;
+line-height: 1.5em;
+}*/
+/*
+.rect-2{
+width: 50%;
+height: 100%;
+flex-shrink: 0;
+background: url("posters/HD-wallpaper-jumanji-2017-dwayne-johnson-jack-black-karen-gillan-kevin-hart-movie-poster-welcome-to-the-jungle.jpg"), lightgray 50% / cover no-repeat;
+background-size: cover;
+margin-left: 0px;
+background-repeat: no-repeat;
+clip-path: polygon(60% 0%, 85% 50%, 60% 100%, 0% 100%, 0% 50%, 0% 0%);
+}/*
+.rect-1{
+  width: 25%;
+height: 100%; 
+flex-shrink: 0;
+background: url("posters/iron_man_three_ver7.jpg");
+opacity: 15%;
+background-color: black;
+background-size: cover;
+background-repeat: no-repeat;
+clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}*/
